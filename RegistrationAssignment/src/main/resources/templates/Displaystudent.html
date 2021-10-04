@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Student Details</h1>
+<hr>
+<table width="80%" border="1">
+	<thead>
+		<tr>
+			<th>NAME</th>
+			<th>Roll no</th>
+			<th>Standard</th>
+			<th>Section</th>
+			<th>School</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr th:each="stud: ${students}">
+			<td th:text="${stud.name}"></td>
+			<td th:text="${stud.sno}"></td>
+			<td th:text="${stud.std}"></td>
+			<td th:text="${stud.sec}"></td>
+			<td th:text="${stud.school}"></td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
